@@ -4,11 +4,13 @@ var http 		= require('http');
 var path		= require('path');
 var serveStatic = require('serve-static');
 var fs 			= require('fs');
+var favicon		= require('serve-favicon');
 
 var app = express();
 
 // mount your routes...
 app.use(express.static(path.join(__dirname + '/public')));
+app.use(favicon(__dirname + '/public/images/favicon.ico'));
 // after static
 
 // mount routes
