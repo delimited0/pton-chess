@@ -1,0 +1,17 @@
+/* album cover photo */
+.album-cover {
+	/*width: 100%;*/
+	text-align: center;
+	padding: 10px;
+	max-height: 200px;
+	border: solid;
+}
+
+.album-container {
+	text-align: center
+}
+
+.album-header {
+	text-align: center;
+	font-family: futura;
+}

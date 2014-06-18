@@ -1,0 +1,45 @@
+doctype html
+html
+	head
+		title People
+
+		meta(charset="utf-8")
+
+		//- stylesheets
+		link(rel="stylesheet", href="/stylesheets/style.css")
+		link(rel="stylesheet", href="/stylesheets/people.css")
+		link(rel="stylesheet", href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css")
+		link(rel='stylesheet', href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css")
+
+		//- javascript
+		script(src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js")
+		script(src="/javascript/ui.js")
+
+	body
+		#layout
+			a#menuLink.menu-link(href='#menu')
+				//- Hamburger icon 
+				span.glyphicon.glyphicon-th-list
+
+			#menu
+				.pure-menu.pure-menu-open
+					a.pure-menu-heading(href='#') PCC
+					ul
+						li
+							a(href='/') Home
+						li
+							a(href='/about') About
+						li.menu-item-divided.pure-menu-selected
+							a(href='/people') People
+						li
+							a(href='/photos') Photos
+						li
+							a(href='/calendar') Calendar
+
+			#main
+				.header
+					h1 People
+				.content
+					.pure-g
+						.pure-u-1#all-officers
+							img.pure-img-responsive(src='http://i.imgur.com/U12J1l9l.jpg', alt='Officers', title='Officers')

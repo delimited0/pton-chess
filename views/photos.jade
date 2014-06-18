@@ -1,0 +1,51 @@
+doctype html
+html
+	head
+		title Photos
+
+		meta(charset="utf-8")
+
+		//- stylesheets
+		link(rel="stylesheet", href="/stylesheets/style.css")
+		link(rel="stylesheet", href="/stylesheets/photos.css")
+		link(rel="stylesheet", href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css")
+		link(rel='stylesheet', href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css")
+
+		//- javascript
+		script(src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js")
+		script(src="/javascript/ui.js")
+
+	body
+		#layout
+			a#menuLink.menu-link(href='#menu')
+				//- Hamburger icon 
+				span.glyphicon.glyphicon-th-list
+
+			#menu
+				.pure-menu.pure-menu-open
+					a.pure-menu-heading(href='#') PCC
+					ul
+						li
+							a(href='/') Home
+						li
+							a(href='/about') About
+						li
+							a(href='/people') People
+						li.menu-item-divided.pure-menu-selected
+							a(href='/photos') Photos
+						li
+							a(href='/calendar') Calendar
+
+			#main
+				.header
+					h1 Photos
+				.content
+					.pure-g
+						.pure-u-1-2.album-container
+							h3.album-header Amateur Team East 2014
+							a(href='#')
+								img.pure-img-responsive.album-cover(src='http://i.imgur.com/H7eSASZl.jpg', alt='Amateur Team East 2014', title='Amateur Team East 2014')
+						.pure-u-1-2.album-container
+							h3.album-header Some Frick Event
+							a(href='#')
+								img.pure-img-responsive.album-cover(src='http://i.imgur.com/7NzoUt4l.jpg', alt='Frick', title='At Frick')
