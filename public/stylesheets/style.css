@@ -158,6 +158,17 @@ appears on the left side of the page.
         margin: 0;
     }
 
+    /* The logo home button */
+    .homebutton {
+        max-width: 20%;
+        text-align: center;
+    }
+
+    .homebutton-link {
+        display: block;
+        margin-left: -8px;
+    }
+
 /* -- Dynamic Button For Responsive Menu -------------------------------------*/
 
 /*

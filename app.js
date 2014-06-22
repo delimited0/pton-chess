@@ -1,3 +1,9 @@
+/**
+ * app.js
+ * Princeton Chess Club website
+ * 
+ */
+
 var express 	= require('express');
 var routes  	= require('./routes');
 var http 		= require('http');
@@ -19,6 +25,8 @@ app.get('/about', routes.about);
 app.get('/people', routes.people);
 app.get('/photos', routes.photos);
 app.get('/calendar', routes.calendar);
+app.get('/news', routes.news);
+app.get('/frick_gallery', routes.frick_gallery);
 
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
