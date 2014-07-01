@@ -54,3 +54,10 @@ exports.frick_gallery = function(req, res) {
 		title: 'Frick Gallery'
 	});
 };
+
+exports.ameast2014_gallery = function(req, res) {
+	console.log(req.path);
+	res.render('ameast2014_gallery', {
+		title: 'Amateur Team East 2014'
+	});
+};
