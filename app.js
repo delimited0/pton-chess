@@ -28,6 +28,7 @@ app.get('/calendar', routes.calendar);
 app.get('/news', routes.news);
 app.get('/frick_gallery', routes.frick_gallery);
 app.get('/ameast2014_gallery', routes.ameast2014_gallery);
+app.get('/contact', routes.contact);
 
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));

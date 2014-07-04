@@ -44,6 +44,13 @@ exports.calendar = function(req, res) {
 	});
 };
 
+exports.contact = function(req, res) {
+	console.log(req.path);
+	res.render('contact', {
+		title: 'Contact'
+	});
+};
+
 /**
  * Gallery routes
  */

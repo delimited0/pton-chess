@@ -1,12 +1,17 @@
+//- 
+//- Home Page
+//- 
+
 doctype html
-html
+HTML
 	head
-		title About
+		title Contact
 
 		meta(charset="utf-8")
 
 		//- stylesheets
 		link(rel="stylesheet", href="/stylesheets/style.css")
+		link(rel="stylesheet", href="/stylesheets/contact.css")
 		link(rel="stylesheet", href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css")
 		link(rel='stylesheet', href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css")
 
@@ -25,10 +30,10 @@ html
 					a.pure-menu-heading(href='#') PCC
 					ul
 						li
-							a(href='/') Home 
+							a(href='/') Home
 						li
 							a(href='/news') News
-						li.menu-item-divided.pure-menu-selected
+						li
 							a(href='/about') About
 						li
 							a(href='/people') People
@@ -36,10 +41,19 @@ html
 							a(href='/photos') Photos
 						li
 							a(href='/calendar') Calendar
-						li
+						li.menu-item-divided.pure-menu-selected
 							a(href='/contact') Contact
 
 			#main
 				.header
-					h1 About
+					h1 Contact
 				.content
+					.pure-g 
+						.pure-u-1-1
+							form.pure-form#email-form(name='email-form', action='#', method='post')
+								fieldset
+									legend Join our listserv! Enter your princeton email address.
+									input.type#email-entry(type='email', placeholder='Email', name='email')
+									button.pure-button.pure-button-primary#email-button(type='submit', value='Submit') Submit
+
+
