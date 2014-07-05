@@ -50,10 +50,11 @@ HTML
 				.content
 					.pure-g 
 						.pure-u-1-1
-							form.pure-form#email-form(name='email-form', action='#', method='post')
+							form.pure-form#email-form(name='email-form', action='http://localhost:3000/contact', method='post')
 								fieldset
-									legend Join our listserv! Enter your princeton email address.
-									input.type#email-entry(type='email', placeholder='Email', name='email')
+									legend Subscribe to our listserv! Enter your Princeton email address.
+									input.type#entry(type='email', placeholder='Email', name='email')
+									input.type#entry(type='password', placeholder='Password', name='password')
 									button.pure-button.pure-button-primary#email-button(type='submit', value='Submit') Submit
 
 

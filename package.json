@@ -1,10 +1,12 @@
 {
-	"name": "princeton-chess",
-	"description": "Princeton University Chess Club site",
-	"version": "0.0.1",
-	"private": true,
-	"dependencies": {
-		"express": "4.x",
-		"jade": "*"
-	}
+  "name": "princeton-chess",
+  "description": "Princeton University Chess Club site",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "4.x",
+    "jade": "*",
+    "nodemailer": "~0.7.0",
+    "body-parser": "~1.4.3"
+  }
 }

@@ -11,8 +11,13 @@ var path		= require('path');
 var serveStatic = require('serve-static');
 var fs 			= require('fs');
 var favicon		= require('serve-favicon');
+var bodyParser  = require('body-parser');
 
 var app = express();
+
+// for post queries
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
 
 // mount your routes...
 app.use(express.static(path.join(__dirname + '/public')));
@@ -29,6 +34,8 @@ app.get('/news', routes.news);
 app.get('/frick_gallery', routes.frick_gallery);
 app.get('/ameast2014_gallery', routes.ameast2014_gallery);
 app.get('/contact', routes.contact);
+
+app.post('/contact', routes.signup);
 
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
