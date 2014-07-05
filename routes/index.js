@@ -90,7 +90,7 @@ exports.signup = function(req, res) {
 	var mailOptions = {
 		from: req.body.email,
 		to: "listserv@princeton.edu",
-		text: "sub chess"
+		text: "sub chessclub"
 	}
 
 	smtpTransport.sendMail(mailOptions, function(err, response) {
