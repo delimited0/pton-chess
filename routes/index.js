@@ -98,10 +98,6 @@ exports.signup = function(req, res) {
 		else console.log("Message sent: " + response.message);
 		smtpTransport.close();
 	});
-	// nodemailer({
-	// 	from: req.body.email,
-	// 	to: "pding@princeton.edu",
-	// 	text: "sub chess"
-	// });
+	
 	res.redirect('/contact');
 }
