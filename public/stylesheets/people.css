@@ -1,4 +1,24 @@
 #all-officers {
 	text-align: center;
-	padding: 10px;	
+	padding-top: 10px;	
+	padding-bottom: 10px;
+	padding-left: auto;
+	padding-right: auto;
+	/*width: 50%;*/
+	display: block;
+	margin: auto 0;
+	margin-top: 20px;
+}
+
+.name-title {
+	text-align: center;
+}
+
+#officer-table {
+	text-align: center;
+}
+
+#officer-table-div {
+	padding: 10px;
+	margin-top: 20px;
 }
