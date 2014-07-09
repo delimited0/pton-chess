@@ -11,7 +11,7 @@ html
 
 		//- stylesheets
 		link(rel="stylesheet", href="/stylesheets/style.css")
-		link(rel="stylesheet", href="/stylesheets/photos.css")
+		link(rel="stylesheet", href="/stylesheets/gallery.css")
 		link(rel="stylesheet", href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css")
 		link(rel='stylesheet', href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css")
 		link(rel="stylesheet", href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-lightbox/0.7.0/bootstrap-lightbox.min.css")
@@ -29,7 +29,7 @@ html
 
 			#menu
 				.pure-menu.pure-menu-open
-					a.pure-menu-heading(href='#') PCC
+					a.pure-menu-heading PCC
 					ul
 						li
 							a(href='/') Home
@@ -51,7 +51,7 @@ html
 				.content
 					.pure-g
 						.pure-u-1-1
-							a.pure-button(href='/photos') 
+							a.pure-button.gallery-back(href='/photos') 
 								span.glyphicon.glyphicon-chevron-left
 								//- | Back
 						.pure-u-1-3
