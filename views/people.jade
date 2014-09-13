@@ -5,19 +5,21 @@
 doctype html
 html
 	head
-		title People
+		title Officers
 
 		meta(charset="utf-8")
 
 		//- stylesheets
+		link(rel='stylesheet', href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css")
 		link(rel="stylesheet", href="/stylesheets/style.css")
 		link(rel="stylesheet", href="/stylesheets/people.css")
 		link(rel="stylesheet", href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css")
-		link(rel='stylesheet', href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css")
 
 		//- javascript
-		script(src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js")
 		script(src="/javascript/ui.js")
+		script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+		script(src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js")
+		
 
 	body
 		#layout
@@ -36,7 +38,7 @@ html
 						li
 							a(href='/about') About
 						li.menu-item-divided.pure-menu-selected
-							a(href='/people') People
+							a(href='/people') Officers
 						li
 							a(href='/photos') Photos
 						li
@@ -46,18 +48,101 @@ html
 
 			#main
 				.header
-					h1 People
+					h1 Officers
 				.content
 					.pure-g
-						.pure-u-1-2#all-officers
+						.pure-u-1-1#all-officers
 							img.pure-img-responsive.img-thumbnail#officer-pic(src='http://i.imgur.com/U12J1l9l.jpg', alt='Princeton Chess Club Officers', title='Officers')
-						.pure-u-1-2#officer-table-div
+						
+						.pure-u-1-1
+							#accordion.panel-group
+								.panel.panel-default
+									h4.panel-title
+										table.table
+											tr
+												th.name-title.title-col Title
+												th.name-title.name-col Name 
+												th.name-title.netid-col netid
+								.panel.panel-default
+									.panel-heading
+										h4.panel-title
+											a(data-toggle='collapse', data-parent='#accordion', href='#collapseOne')
+												table.table#officer-table
+													tr
+														th.name-title.title-col Co-President
+														th.name-title.name-col George Liu '15 
+														th.name-title.netid-col gsliu
+									#collapseOne.panel-collapse.collapse
+										.panel-body
+											| Anim pariatur cliche reprehenderit, enim eiusmod high       
+								.panel.panel-default
+									.panel-heading
+										h4.panel-title
+											a(data-toggle='collapse', data-parent='#accordion', href='#collapseTwo')
+												table.table#officer-table
+													tr
+														th.name-title.title-col Co-President
+														th.name-title.name-col Austin Wang '15
+														th.name-title.netid-col austinw
+									#collapseTwo.panel-collapse.collapse
+										.panel-body
+											| Anim pariatur cliche reprehenderit, enim eiusmod high 
+								.panel.panel-default
+									.panel-heading
+										h4.panel-title
+											a(data-toggle='collapse', data-parent='#accordion', href='#collapseThree')
+												table.table#officer-table
+													tr
+														th.name-title.title-col Webmaster
+														th.name-title.name-col Patrick Ding '15
+														th.name-title.netid-col pding
+									#collapseThree.panel-collapse.collapse
+										.panel-body
+											| Anim pariatur cliche reprehenderit, enim eiusmod high
+								.panel.panel-default
+									.panel-heading
+										h4.panel-title
+											a(data-toggle='collapse', data-parent='#accordion', href='#collapseFour')
+												table.table#officer-table
+													tr
+														th.name-title.title-col Treasurer
+														th.name-title.name-col Alan Du '17
+														th.name-title.netid-col aydu
+									#collapseFour.panel-collapse.collapse
+										.panel-body
+											| Anim pariatur cliche reprehenderit, enim eiusmod high  
+								.panel.panel-default
+									.panel-heading
+										h4.panel-title
+											a(data-toggle='collapse', data-parent='#accordion', href='#collapseFive')
+												table.table#officer-table
+													tr
+														th.name-title.title-col Secretary
+														th.name-title.name-col Anna Matlin '17
+														th.name-title.netid-col amatlin
+									#collapseFive.panel-collapse.collapse
+										.panel-body
+											| Anim pariatur cliche reprehenderit, enim eiusmod high  
+								.panel.panel-default
+									.panel-heading
+										h4.panel-title
+											a(data-toggle='collapse', data-parent='#accordion', href='#collapseSix')
+												table.table#officer-table
+													tr
+														th.name-title.title-col Events Manager
+														th.name-title.name-col Grant Rheingold '17
+														th.name-title.netid-col grantr
+									#collapseFive.panel-collapse.collapse
+										.panel-body
+											| Anim pariatur cliche reprehenderit, enim eiusmod high			
+
+						.pure-u-1-1#officer-table-div
 							table.table#officer-table
 								thead 
 									tr
-										th.name-title Role
-										th.name-title Name 
-										th.name-title netid
+										th.name-title#title-col Title
+										th.name-title#name-col Name 
+										th.name-title#netid-col netid
 								tr
 									td.name-title Co-President
 									td.name-title George Liu '15 

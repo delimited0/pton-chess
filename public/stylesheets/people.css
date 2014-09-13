@@ -18,7 +18,20 @@
 	text-align: center;
 }
 
+.officer-entry {
+	text-align: center;
+}
+
 #officer-table-div {
 	padding: 10px;
 	margin-top: 20px;
+}
+
+.name-col {
+	max-width: 300px;
+	min-width: 300px;
+}
+
+.title-col, .netid-col {
+	width: 50%;
 }
