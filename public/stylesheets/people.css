@@ -10,23 +10,7 @@
 	margin-top: 20px;
 }
 
-.name-title {
-	text-align: center;
-}
-
-#officer-table {
-	text-align: center;
-}
-
-.officer-entry {
-	text-align: center;
-}
-
-#officer-table-div {
-	padding: 10px;
-	margin-top: 20px;
-}
-
+/* Centering the officer info card panel */
 .name-col {
 	max-width: 300px;
 	min-width: 300px;
@@ -34,4 +18,32 @@
 
 .title-col, .netid-col {
 	width: 50%;
+}
+
+/* bio style */
+
+.bio {
+	text-align: left;
+	color: black;
+}
+
+/* info card panel correct div height */
+
+.panel-title {
+	display: table;
+}
+
+.info-card {
+	height: 100%;
+	display: table-cell;
+}
+
+.officer-pic {
+	width: 100%;
+	text-align: center;
+}
+
+.panel-heading:hover {
+	background-color: #333333;
+	color: white;
 }
