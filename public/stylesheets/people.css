@@ -31,6 +31,7 @@
 
 .panel-title {
 	display: table;
+	margin: 0 auto;
 }
 
 .info-card {
@@ -38,10 +39,19 @@
 	display: table-cell;
 }
 
+.container {
+	width: 60%;
+	margin-top: 10px;
+}
+
 .officer-pic {
 	width: 100%;
 	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
+
 
 .panel-heading:hover {
 	background-color: #333333;
